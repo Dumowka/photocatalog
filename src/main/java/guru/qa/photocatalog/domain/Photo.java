@@ -1,4 +1,8 @@
 package guru.qa.photocatalog.domain;
 
-public record photo() {
+import java.util.Date;
+
+public record Photo(String description,
+                    Date lastModifyDate,
+                    String content) {
 }

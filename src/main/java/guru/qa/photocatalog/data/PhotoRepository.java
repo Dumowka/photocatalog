@@ -1,4 +1,9 @@
 package guru.qa.photocatalog.data;
 
-public class PhotoRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.UUID;
+
+
+public interface PhotoRepository extends JpaRepository<PhotoEntity, UUID> {
 }
