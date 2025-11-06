@@ -12,6 +12,8 @@ public interface PhotoService {
 
     List<Photo> allPhotos();
 
+    List<PhotoGql> allGqlPhotos();
+
     Slice<PhotoGql> allGqlPhotos(Pageable pageable);
 
     Photo photoByDescription(String description);
